@@ -4,6 +4,8 @@ const express = require('express');
 const crypto = require('crypto');
 const bodyParser = require('body-parser');
 const { handleIncomingMessage } = require('./handler'); // Import the handler
+const dotenv = require('dotenv');
+dotenv.config(); // Load environment variables from .env file
 
 const app = express();
 

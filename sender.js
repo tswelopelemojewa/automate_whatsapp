@@ -1,5 +1,7 @@
 // sender.js
 const axios = require('axios');
+const dotenv = require('dotenv');
+dotenv.config(); // Load environment variables from .env file
 
 const WHATSAPP_TOKEN = process.env.WHATSAPP_TOKEN;
 const PHONE_NUMBER_ID = process.env.PHONE_NUMBER_ID;
